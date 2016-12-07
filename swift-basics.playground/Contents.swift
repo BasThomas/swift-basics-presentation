@@ -53,7 +53,7 @@ struct Book {
 
 Book(title: "De IJzeren Wil", author: "Bas Haring")
 
-// MARK: Meer Enums
+// MARK: More Enums
 
 func track(number: IntNumber) {
   print(number.rawValue)

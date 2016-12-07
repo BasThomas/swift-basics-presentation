@@ -86,7 +86,7 @@ Book(title: "De IJzeren Wil", author: "Bas Haring")
 
 ---
 
-## Meer Enums
+## More Enums
 
 ```swift
 func track(number: IntNumber) {
