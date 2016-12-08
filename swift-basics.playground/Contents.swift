@@ -4,10 +4,10 @@ import Foundation
 
 var statusCode: Int?
 
-// print(statusCode!) // crash
+// print(statusCode!) // crash 😱
 
 if statusCode != nil {
-  print(statusCode!) // Please don't do this.
+  print(statusCode!) // Please don't do this. 😢
 }
 
 statusCode = 200
@@ -29,20 +29,20 @@ let result4 = (statusCode != nil) ? statusCode! : 200
 
 // MARK: - Enums
 
-enum IntNumber: Int {
+enum Number: Int {
   case zero // = 0
   case one // = 1
 }
 
-enum StringNumber: String {
-  case zero // = "zero"
-  case one // = "one"
+enum Host: String {
+  case dolores // = "dolores"
+  case bernard // = "bernard"
 }
 
-// Here, you get an initializer for free:
+// Here, you get an initializer for 🆓:
 
-IntNumber(rawValue: 1) // .one
-StringNumber(rawValue: "zero") // .zero
+Number(rawValue: 1) // .one 1️⃣
+Host(rawValue: "dolores") // .dolores 🤖
 
 // MARK: - Initializer
 
@@ -55,13 +55,13 @@ Book(title: "De IJzeren Wil", author: "Bas Haring")
 
 // MARK: More Enums
 
-func track(number: IntNumber) {
+func track(number: Number) {
   print(number.rawValue)
 }
 
 // You can call this as
 
-track(number: IntNumber.zero) // 0
+track(number: Number.zero) // 0
 
 // .. but also as
 
@@ -92,4 +92,6 @@ extension Int {
 // MARK: - Typealias
 // https://github.com/BasThomas/Analysis
 
+typealias 📖 = Book
 
+📖(title: "A Dream of Spring", author: "George RR Martin") // 😭
