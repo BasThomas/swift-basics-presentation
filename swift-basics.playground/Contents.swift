@@ -13,7 +13,7 @@ if statusCode != nil {
 statusCode = 200
 
 if let statusCode = statusCode  {
-  print(statusCode) // Int, niet Optional<Int>
+  print(statusCode) // Int, not Optional<Int>
 }
 
 // MARK: - ??
